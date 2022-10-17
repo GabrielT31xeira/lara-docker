@@ -1,4 +1,26 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Para rodar o projeto (ainda em melhora)
+
+Rodar o docker composer up --force-recreate </br>
+Entrar no banco e criar o banco de dados </br>
+1 - Entrar no container do php 
+```
+docker compose exec php bash 
+```
+2 - Entar no diretorio
+``` 
+/var/www
+```
+3 - Rodar os Seguintes comandos
+```
+php artisan migrate
+```
+
+Criar dentro /var/www/storage a pasta views </br>
+dar as permições </br>
+chmod -R 777 framework </br>
+chown -R www-data:www-data framework
+
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -63,4 +85,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
